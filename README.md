@@ -6,6 +6,8 @@ Hackintosh for Kaby Lake RBS Guide
 This should be a relatively simple guide for setting up a hackintosh on a Razer Blade Stealth (mine is a 7200U i5 processor BIOS Version 8.02) 
 If you fuck something up on your laptop, that’s on you…
 
+**Once everything is set up, you should generate a new serial number and stuff that goes along with it.**
+
 Anyway
 
 **Things to take note**
