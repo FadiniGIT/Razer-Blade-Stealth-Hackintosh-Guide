@@ -20,6 +20,7 @@ Anyway
 * ANYTHING HDMI
 * ANYTHING THUNDERBOLT 3 
 * WEBCAM
+* MICROPHONE
 * Sleep sorta works - display may require 2 openings to turn on from sleep
 
 **Things that should work fine**
