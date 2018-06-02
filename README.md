@@ -10,13 +10,16 @@ Anyway
 
 **Things to take note**
 
-* wifi will not work natively, it will require a USB dongle or a new card to be installed
+* wifi will not work natively, it will require a USB dongle or a new card to be installed. I ordered [this](https://www.amazon.com/gp/product/B011T5IF06/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1) and installed the drivers from [here](https://jumpshare.com/v/rUqALv6pmK1IB4SZiVtx) and it wifi is working great.
 
 * trackpad works with tracking and right/left click buttons at the bottom and tap-to-click works all over on the trackpad, there are no multi gestures, just basic functionality 
+
+* Battery percentage does show correctly, but it only updates if you disable and then enable the percentage from what I can tell (I'm going to try to find a fix)
 
 **THINGS I HAVE NOT TESTED YET:**
 * ANYTHING HDMI
 * ANYTHING THUNDERBOLT 3 
+* WEBCAM
 * Sleep sorta works - display may require 2 openings to turn on from sleep
 
 **Things that should work fine**
@@ -25,7 +28,7 @@ Anyway
 * Audio
 * Backlight
 * Trackpad
-* Battery Status
+* Battery Status (look in things to take note)
 
 Time to get into it
 
@@ -89,6 +92,8 @@ In terminal
 
 Copy Laptop EFI setup/EFI/CLOVER/ to /EFI/CLOVER in the EFI partition just mounted
 
+From the install USB, copy /EFI/BOOT to the EFI partition mounted in /EFI/
+
 Copy files in Laptop System Drive/Library/Extentions/ to /Library/Extentions on the system drive
 
 
@@ -102,4 +107,6 @@ Information/stuff:
 * This is the guide I followed to set mine up https://www.tonymacx86.com/threads/guide-razer-blade-2017.242627/ as well as a few other resources online
 
 Disclaimer:
-I have not tried to install macOS following these steps above, what I did was take the parts from. the installation and add my files from a working machine to the - in hope that it will work and boot smoothly - best of luck to ya!
+~~I have not tried to install macOS following these steps above, what I did was take the parts from. the installation and add my files from a working machine to the - in hope that it will work and boot smoothly - best of luck to ya!~~
+
+I ended up reinstalling cause I messed up related to my system (yours will be fine, this was a dun goofed my me) and I followed my instructions and it seems to be up and running great! So glhf
