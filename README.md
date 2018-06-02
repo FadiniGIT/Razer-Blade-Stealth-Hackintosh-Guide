@@ -19,7 +19,7 @@ Anyway
 * Battery percentage does show correctly, but it only updates if you disable and then enable the percentage from what I can tell (I'm going to try to find a fix)
 
 **THINGS I HAVE NOT TESTED YET:**
-* ANYTHING HDMI
+* ~~ANYTHING HDMI~~ (**I plugged it in and it seems to mess up my laptop so I'd avoid using HDMI**)
 * ANYTHING THUNDERBOLT 3 
 * WEBCAM
 * MICROPHONE
@@ -79,7 +79,7 @@ Open the EFI partition from the flash drive - copy the files in USB DRIVE STUFF/
 
 Boot to USB drive
 
-Use disk utility to wipe the drive and format it as OS X Extended Journaled
+Use disk utility to wipe the drive and format it as APFS
 
 Install
 
