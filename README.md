@@ -95,7 +95,7 @@ In terminal
 
 Copy Laptop EFI setup/EFI/CLOVER/ to /EFI/CLOVER in the EFI partition just mounted
 
-From the install USB, copy /EFI/BOOT to the EFI partition mounted in /EFI/
+~~From the install USB, copy /EFI/BOOT to the EFI partition mounted in /EFI/~~ (added this in)
 
 Copy files in Laptop System Drive/Library/Extentions/ to /Library/Extentions on the system drive
 
