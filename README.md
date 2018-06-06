@@ -16,7 +16,7 @@ Anyway
 
 * trackpad works with tracking and right/left click buttons at the bottom and tap-to-click works all over on the trackpad, there are no multi gestures, just basic functionality 
 
-* Battery percentage does show correctly, but it only updates if you disable and then enable the percentage from what I can tell (I'm going to try to find a fix)
+* Battery percentage does show correctly, but it only updates if you disable and then enable the percentage from what I can tell ~~(I'm going to try to find a fix)~~ It seems to work correctly all the sudden ¯\_(ツ)_/¯
 
 **THINGS I HAVE NOT TESTED YET:**
 * ~~ANYTHING HDMI~~ (**I plugged it in and it seems to mess up my laptop so I'd avoid using HDMI**)
