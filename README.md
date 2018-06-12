@@ -1,5 +1,7 @@
 # Razer-Blade-Stealth-Hackintosh-Guide
 Hackintosh for Kaby Lake RBS Guide
+* Originally installed on 10.13.4
+* Updated to 10.13.5 => trackpad stopped working for a bit, a few reboots fixed it
 
 ## **PLEASE READ THROUGH THE ENTIRE GUIDE FIRST**
 
