@@ -24,7 +24,7 @@ Anyway
 * ~~ANYTHING HDMI~~ (**I plugged it in and it seems to mess up my laptop so I'd avoid using HDMI**)
 * ANYTHING THUNDERBOLT 3 
 * WEBCAM
-* MICROPHONE
+* ~~MICROPHONE~~ - Microphone works
 * Sleep sorta works - display may require 2 openings to turn on from sleep
 
 **Things that should work fine**
