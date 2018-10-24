@@ -1,39 +1,44 @@
-# Razer-Blade-Stealth-Hackintosh-Guide
+# Razer-Blade-Stealth-Hackintosh-Guide (Mojave changes)
 Hackintosh for Kaby Lake RBS Guide
-* Originally installed on 10.13.4
-* Updated to 10.13.5 => trackpad stopped working for a bit, a few reboots fixed it
+
+* Originally installed on 10.14.0
+* Tested with a Razer Blade Stealth, i7 8550U / 16GB RAM
 
 ## **PLEASE READ THROUGH THE ENTIRE GUIDE FIRST**
 
-This should be a relatively simple guide for setting up a hackintosh on a Razer Blade Stealth (mine is a 7200U i5 processor BIOS Version 8.02) 
-If you fuck something up on your laptop, that’s on you…
+This should be a relatively simple guide for setting up a hackintosh on a Razer Blade Stealth (Tested with a Razer Blade Stealth, i7 8550U / 16GB RAM) 
 
 **Once everything is set up, you should generate a new serial number and stuff that goes along with it.**
 
-Anyway
+### Geekbench
+
+This laptop setup appears to be inline with a mid-2017 15" Macbook Pro with the i7 7920HQ:
+
+https://www.dropbox.com/s/v2hhia23azd11wu/Screen%20Shot%202018-10-25%20at%2010.22.17%20am.png?raw=1
 
 **Things to take note**
 
-* wifi will not work natively, it will require a USB dongle or a new card to be installed. I ordered [this](https://www.amazon.com/gp/product/B011T5IF06/ref=oh_aui_detailpage_o00_s00?ie=UTF8&psc=1) and installed the drivers from [here](https://jumpshare.com/v/rUqALv6pmK1IB4SZiVtx) and it wifi is working great.
+* Wifi will not work natively, it will require a USB dongle or a new card to be installed. I bought a `Broadcom BCM94352Z DW1560 802.11ac Wifi Bluetooth 4.0 M.2` from eBay, opened up the laptop and replaced the existing card with the Broadcom one.  After that change, both wifi and Bluetooth work fine, for a cost of about $30.
 
-* trackpad works with tracking and right/left click buttons at the bottom and tap-to-click works all over on the trackpad, there are no multi gestures, just basic functionality 
+* The laptop will only boot reliably in verbose mode (`-v` in the boot flags).  I can't quite figure out why, and I'm sure it's something relatively easy to fix, but I haven't really been bothered by it.
 
-* Battery percentage does show correctly, but it only updates if you disable and then enable the percentage from what I can tell ~~(I'm going to try to find a fix)~~ It seems to work correctly all the sudden ¯\_(ツ)_/¯
+* I haven't gotten Thunderbolt 3 to work.  I don't have a TB3 device to test with, but it does work as a USB3.1 port.  I'm just not sure if hotswap on the USB3.1 port is working.  I tested an ethernet dongle and it worked fine, but TB3-->HDMI didn't seem to work.
 
-**THINGS I HAVE NOT TESTED YET:**
-* ~~ANYTHING HDMI~~ (**I plugged it in and it seems to mess up my laptop so I'd avoid using HDMI**)
-* ANYTHING THUNDERBOLT 3 
-* WEBCAM
-* ~~MICROPHONE~~ - Microphone works
-* Sleep sorta works - display may require 2 openings to turn on from sleep
+* I had a "crackle" on my headphone jack and volume was low.  Downloading the fix here and running the `install.command` file fixed that issue:  https://github.com/daliansky/XiaoMi-Pro/tree/master/ALCPlugFix
+
+* Multi-touch works alright on the touchpad.  Not as good as a real Mac touchpad, but close enough.  A few caveats:
+  * I haven't figured out how to get two-finger *click* for right mouse press to work.  A two-finger *tap* works fine.
+  * Five-finger gestures will cause a kernel crash.  
 
 **Things that should work fine**
 	
-* Intel HD 620 Graphics (I recommend settings the resolution to 2048x1152 (by alt click on scaled when default is selected for display settings))
-* Audio
+* Intel HD 620 Graphics
+* Audio, including port switching
 * Backlight
-* Trackpad
-* Battery Status (look in things to take note)
+* Trackpad (including multi-touch gestures)
+* Battery status
+* HDMI out, including audio switching
+* Sleep
 
 Time to get into it
 
@@ -60,10 +65,10 @@ In the clover .pkg
 * Press “Install” button
 
 
-Time to add macOS High Sierra to the drive (Downloaded from the app store)
+Time to add macOS Mojave to the drive (Downloaded from the app store)
 
 In terminal
-`sudo "/Applications/Install macOS High Sierra.app/Contents/Resources/createinstallmedia" --volume  /Volumes/install_osx --nointeraction`
+`sudo "/Applications/Install macOS Mojave.app/Contents/Resources/createinstallmedia" --volume  /Volumes/install_osx --nointeraction`
 
 
 Open the EFI partition from the flash drive - copy the files in USB DRIVE STUFF/USB EFI Partition/EFI/CLOVER/ to /EFI/CLOVER on the flash drive
@@ -87,22 +92,19 @@ Install
 
 ## **Post Install**
 
-If trackpad doesn’t work - delete the kexts
-	AppleIntelLpssI2C.kext and AppleIntelLpssI2CController.kext
-From /System/Library/Extentions
+If trackpad doesn’t work, plug in a USB mouse temporarily.
 
 In terminal
 `diskutil list` find out where the EFI partition on the system is
 `diskutil mountDisk /dev/disk#s#` to mount EFI from the system drive
 
-Copy Laptop EFI setup/EFI/CLOVER/ to /EFI/CLOVER in the EFI partition just mounted
+Copy `Laptop EFI setup/EFI/*` to `/EFI/*` in the EFI partition just mounted
 
-~~From the install USB, copy /EFI/BOOT to the EFI partition mounted in /EFI/~~ (added this in)
+I know that the kexts should likely be placed in `/System/Library/Extensions`, but the above setup works fine for me.
 
-Copy files in Laptop System Drive/Library/Extentions/ to /Library/Extentions on the system drive
+### Audio fix
 
-
-If stuff doesn’t work for you, give an attempt to fix it
+I had trouble with the headphone jack not working.  It would switch over appropriately when headphones were plugged in, but audio was distorted.  I downloaded this fix, ran the `install.command` file, and that appeared to fix the issue:  https://github.com/daliansky/XiaoMi-Pro/tree/master/ALCPlugFix.  Sometimes after reboot, if the headphones are already plugged in, I have to unplug / replug to get the crackle to go away.
 
 Information/stuff: 
 
@@ -110,8 +112,3 @@ Information/stuff:
 * Battery - https://www.tonymacx86.com/threads/guide-how-to-patch-dsdt-for-working-battery-status.116102/
 * Trackpad - https://voodooi2c.github.io/#Installation/Installation https://github.com/MacForceOne/VoodooI2C	
 * This is the guide I followed to set mine up https://www.tonymacx86.com/threads/guide-razer-blade-2017.242627/ as well as a few other resources online
-
-Disclaimer:
-~~I have not tried to install macOS following these steps above, what I did was take the parts from. the installation and add my files from a working machine to the - in hope that it will work and boot smoothly - best of luck to ya!~~
-
-I ended up reinstalling cause I messed up related to my system (yours will be fine, this was a dun goofed my me) and I followed my instructions and it seems to be up and running great! So glhf

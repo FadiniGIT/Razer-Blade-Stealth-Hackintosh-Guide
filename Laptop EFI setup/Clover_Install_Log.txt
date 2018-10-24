@@ -1,0 +1,44 @@
+
+Clover EFI installer log - Sat Oct 13 23:16:49 PDT 2018
+Installer version: v2.4k r4700 EFI bootloader
+======================================================
+/dev/disk0 (internal):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      GUID_partition_scheme                         256.1 GB   disk0
+   1:                        EFI NO NAME                 536.9 MB   disk0s1
+   2:                 Apple_APFS Container disk1         255.5 GB   disk0s2
+
+/dev/disk1 (synthesized):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:      APFS Container Scheme -                      +255.5 GB   disk1
+                                 Physical Store disk0s2
+   1:                APFS Volume Laptop                  12.0 GB    disk1s1
+   2:                APFS Volume Preboot                 49.1 MB    disk1s2
+   3:                APFS Volume Recovery                512.4 MB   disk1s3
+   4:                APFS Volume VM                      2.1 GB     disk1s4
+
+/dev/disk2 (external, physical):
+   #:                       TYPE NAME                    SIZE       IDENTIFIER
+   0:     FDisk_partition_scheme                        *15.7 GB    disk2
+   1:                 DOS_FAT_32 CLOVER EFI              209.7 MB   disk2s1
+   2:                  Apple_HFS Install macOS Mojave    15.5 GB    disk2s2
+
+Target volume /Volumes/Laptop on disk1 is APFS on physical store disk0s2
+======================================================
+Backing up EFI files
+
+Backing up stage2 file /Volumes/Laptop/EFIROOTDIR/boot  to /Volumes/Laptop/EFI-Backups/r4700/2018-10-13-23h16/boot
+Backing up /Volumes/Laptop/EFIROOTDIR/EFI folder to /Volumes/Laptop/EFI-Backups/r4700/2018-10-13-23h16/EFI
+======================================================
+Installing BootSectors/BootLoader
+
+Stage 0 - Don't write any of boot0af, boot0md, boot0ss to /
+Stage 1 - Don't write any of boot1h2, boot1f32alt, boot1xalt to /
+
+Removing drivers64UEFI/VBoxHfs-64.efi driver because HFSPlus driver present
+
+Theme 'tonymacx86' (defined in config.plist) not found !
+Using default theme 'BGM'
+======================================================
+=========== Clover EFI Installation Finish ===========
+======================================================
