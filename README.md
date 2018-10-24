@@ -85,27 +85,28 @@ Open the EFI partition from the flash drive - copy the files in USB DRIVE STUFF/
 
 ## **Install**
 
-Boot to USB drive
+* Boot to USB drive
 
-Use disk utility to wipe the drive and format it as APFS
+* Use disk utility to wipe the drive and format it as APFS
 
-Install
+* Install
 
 ## **Post Install**
 
-If trackpad doesn’t work, plug in a USB mouse temporarily.
+* If trackpad doesn’t work, plug in a USB mouse temporarily.
 
-In terminal
-`diskutil list` find out where the EFI partition on the system is
-`diskutil mountDisk /dev/disk#s#` to mount EFI from the system drive
+* In terminal
+ * `diskutil list` find out where the EFI partition on the system is
+ * `diskutil mountDisk /dev/disk#s#` to mount EFI from the system drive
 
-Copy `Laptop EFI setup/EFI/*` to `/EFI/*` in the EFI partition just mounted
+* Copy `Laptop EFI setup/*` to `/EFI/*` in the EFI partition just mounted
+* Reboot
 
 I know that the kexts should likely be placed in `/System/Library/Extensions`, but the above setup works fine for me.
 
 ### Audio fix
 
-I had trouble with the headphone jack not working.  It would switch over appropriately when headphones were plugged in, but audio was distorted.  I downloaded this fix, ran the `install.command` file, and that appeared to fix the issue:  https://github.com/daliansky/XiaoMi-Pro/tree/master/ALCPlugFix.  Sometimes after reboot, if the headphones are already plugged in, I have to unplug / replug to get the crackle to go away.
+I had trouble with the headphone jack not working.  It would switch over appropriately when headphones were plugged in, but audio was distorted.  I downloaded this fix, ran the `install.command` file, and that appeared to fix the issue:  https://github.com/daliansky/XiaoMi-Pro/tree/master/ALCPlugFix.  Sometimes after reboot/sleep, if the headphones are already plugged in, I have to unplug / replug to get the crackle to go away.
 
 Information/stuff: 
 
