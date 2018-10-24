@@ -14,7 +14,8 @@ This should be a relatively simple guide for setting up a hackintosh on a Razer 
 
 This laptop setup appears to be inline with a mid-2017 15" Macbook Pro with the i7 7920HQ:
 
-https://www.dropbox.com/s/v2hhia23azd11wu/Screen%20Shot%202018-10-25%20at%2010.22.17%20am.png?raw=1
+![Geekbench](https://www.dropbox.com/s/v2hhia23azd11wu/Screen%20Shot%202018-10-25%20at%2010.22.17%20am.png?raw=1)
+
 
 **Things to take note**
 
