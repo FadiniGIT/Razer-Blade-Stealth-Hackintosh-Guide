@@ -1,0 +1,128 @@
+7:540  1:265  Found UEFI Acpi 2.0 RSDP at 7A710000
+7:540  0:000  Saving ACPI tables from RSDP 7A710000 to EFI\CLOVER\ACPI\origin ...
+7:540  0:000   7A710000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:540  0:000    (Xsdt: 7A7100B8, Rsdt: 7A710028)
+7:540  0:000    7A7100B8: 'XSDT', 'A M I', Rev: 1, Len: 236
+7:540  0:000    7A710028: 'RSDT', 'A M I', Rev: 1, Len: 136
+7:540  0:000    Tables in Xsdt: 25
+7:540  0:000    0. 7A739418: 'FACP', 'A M I', Rev: 6, Len: 276
+7:540  0:000        (Dsdt: 7A710238, Facs: 7A787F00, XDsdt: 7A710238, XFacs: 0)
+7:540  0:000        7A710238: 'DSDT', 'A M I', Rev: 2, Len: 168411
+7:545  0:004        7A787F00: 'FACS', Ver: 2, Len: 64
+7:545  0:000    1. 7A739530: 'APIC', 'A M I', Rev: 3, Len: 188
+7:545  0:000    2. 7A7395F0: 'FPDT', 'A M I', Rev: 1, Len: 68
+7:545  0:000    3. 7A739638: 'FIDT', 'A M I', Rev: 1, Len: 156
+7:545  0:000    4. 7A7396D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+7:545  0:000    5. 7A739718: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+7:545  0:000    6. 7A739A78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12630
+7:545  0:000    7. 7A73CBD0: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:545  0:000    8. 7A73CC08: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 4514
+7:545  0:000    9. 7A73DDB0: 'SSDT', 'xh_kbl-r', Rev: 2, Len: 1923
+7:545  0:000    10. 7A73E538: 'UEFI', 'A M I', Rev: 1, Len: 66
+7:545  0:000    11. 7A73E580: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+7:545  0:000    12. 7A73FD30: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:545  0:000    13. 7A73FDC8: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:545  0:000    14. 7A73FF10: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:545  0:000    15. 7A7401B0: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:545  0:000    16. 7A7431B8: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+7:545  0:000    17. 7A7436D0: 'DBGP', '', Rev: 1, Len: 52
+7:545  0:000    18. 7A743708: 'DBG2', '', Rev: 0, Len: 84
+7:545  0:000    19. 7A743760: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4838
+7:545  0:000    20. 7A744A48: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:545  0:000    21. 7A744B38: 'BGRT', 'A M I', Rev: 1, Len: 56
+7:545  0:000    22. 7A744B70: 'TPM2', 'A M I', Rev: 3, Len: 52
+7:545  0:000    23. 7A744BA8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:545  0:000    24. 7A744C48: 'WSMT', 'A M I', Rev: 1, Len: 40
+7:545  0:000    Tables in Rsdt: 25
+7:545  0:000    0. 7A7101B0: 'FACP', 'A M I', Rev: 2, Len: 132
+7:545  0:000        (Dsdt: 7A710238, Facs: 7A787EC0)
+7:545  0:000        7A710238: 'DSDT', 'A M I', Rev: 2, Len: 168411
+7:550  0:004        7A787EC0: 'FACS', Ver: 0, Len: 64
+7:550  0:000    1. 7A739530: 'APIC', 'A M I', Rev: 3, Len: 188
+7:550  0:000    2. 7A7395F0: 'FPDT', 'A M I', Rev: 1, Len: 68
+7:550  0:000    3. 7A739638: 'FIDT', 'A M I', Rev: 1, Len: 156
+7:550  0:000    4. 7A7396D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+7:550  0:000    5. 7A739718: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+7:550  0:000    6. 7A739A78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12630
+7:550  0:000    7. 7A73CBD0: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:550  0:000    8. 7A73CC08: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 4514
+7:550  0:000    9. 7A73DDB0: 'SSDT', 'xh_kbl-r', Rev: 2, Len: 1923
+7:550  0:000    10. 7A73E538: 'UEFI', 'A M I', Rev: 1, Len: 66
+7:550  0:000    11. 7A73E580: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+7:550  0:000    12. 7A73FD30: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:550  0:000    13. 7A73FDC8: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:550  0:000    14. 7A73FF10: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:550  0:000    15. 7A7401B0: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:550  0:000    16. 7A7431B8: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+7:550  0:000    17. 7A7436D0: 'DBGP', '', Rev: 1, Len: 52
+7:550  0:000    18. 7A743708: 'DBG2', '', Rev: 0, Len: 84
+7:550  0:000    19. 7A743760: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4838
+7:550  0:000    20. 7A744A48: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:550  0:000    21. 7A744B38: 'BGRT', 'A M I', Rev: 1, Len: 56
+7:550  0:000    22. 7A744B70: 'TPM2', 'A M I', Rev: 3, Len: 52
+7:550  0:000    23. 7A744BA8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:550  0:000    24. 7A744C48: 'WSMT', 'A M I', Rev: 1, Len: 40
+7:550  0:000  Found UEFI Acpi 1.0 RSDP at 7A710000
+7:550  0:000  Printing ACPI tables from RSDP 7A710000 ...
+7:550  0:000   7A710000: 'RSD PTR ', Rev: 2 (Acpi 2.0 or newer), Len: 36
+7:550  0:000    (Xsdt: 7A7100B8, Rsdt: 7A710028)
+7:550  0:000    7A7100B8: 'XSDT', 'A M I', Rev: 1, Len: 236
+7:550  0:000    7A710028: 'RSDT', 'A M I', Rev: 1, Len: 136
+7:550  0:000    Tables in Xsdt: 25
+7:550  0:000    0. 7A739418: 'FACP', 'A M I', Rev: 6, Len: 276
+7:550  0:000        (Dsdt: 7A710238, Facs: 7A787F00, XDsdt: 7A710238, XFacs: 0)
+7:550  0:000        7A710238: 'DSDT', 'A M I', Rev: 2, Len: 168411
+7:555  0:004        7A787F00: 'FACS', Ver: 2, Len: 64
+7:555  0:000    1. 7A739530: 'APIC', 'A M I', Rev: 3, Len: 188
+7:555  0:000    2. 7A7395F0: 'FPDT', 'A M I', Rev: 1, Len: 68
+7:555  0:000    3. 7A739638: 'FIDT', 'A M I', Rev: 1, Len: 156
+7:555  0:000    4. 7A7396D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+7:555  0:000    5. 7A739718: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+7:555  0:000    6. 7A739A78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12630
+7:555  0:000    7. 7A73CBD0: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:555  0:000    8. 7A73CC08: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 4514
+7:555  0:000    9. 7A73DDB0: 'SSDT', 'xh_kbl-r', Rev: 2, Len: 1923
+7:555  0:000    10. 7A73E538: 'UEFI', 'A M I', Rev: 1, Len: 66
+7:555  0:000    11. 7A73E580: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+7:555  0:000    12. 7A73FD30: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:555  0:000    13. 7A73FDC8: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:555  0:000    14. 7A73FF10: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:555  0:000    15. 7A7401B0: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:555  0:000    16. 7A7431B8: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+7:555  0:000    17. 7A7436D0: 'DBGP', '', Rev: 1, Len: 52
+7:555  0:000    18. 7A743708: 'DBG2', '', Rev: 0, Len: 84
+7:555  0:000    19. 7A743760: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4838
+7:555  0:000    20. 7A744A48: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:555  0:000    21. 7A744B38: 'BGRT', 'A M I', Rev: 1, Len: 56
+7:555  0:000    22. 7A744B70: 'TPM2', 'A M I', Rev: 3, Len: 52
+7:555  0:000    23. 7A744BA8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:555  0:000    24. 7A744C48: 'WSMT', 'A M I', Rev: 1, Len: 40
+7:555  0:000    Tables in Rsdt: 25
+7:555  0:000    0. 7A7101B0: 'FACP', 'A M I', Rev: 2, Len: 132
+7:555  0:000        (Dsdt: 7A710238, Facs: 7A787EC0)
+7:555  0:000        7A710238: 'DSDT', 'A M I', Rev: 2, Len: 168411
+7:560  0:004        7A787EC0: 'FACS', Ver: 0, Len: 64
+7:560  0:000    1. 7A739530: 'APIC', 'A M I', Rev: 3, Len: 188
+7:560  0:000    2. 7A7395F0: 'FPDT', 'A M I', Rev: 1, Len: 68
+7:560  0:000    3. 7A739638: 'FIDT', 'A M I', Rev: 1, Len: 156
+7:560  0:000    4. 7A7396D8: 'MCFG', 'A M I', Rev: 1, Len: 60
+7:560  0:000    5. 7A739718: 'SSDT', 'SataTabl', Rev: 1, Len: 857
+7:560  0:000    6. 7A739A78: 'SSDT', 'SaSsdt', Rev: 2, Len: 12630
+7:560  0:000    7. 7A73CBD0: 'HPET', 'KBL-ULT', Rev: 1, Len: 56
+7:560  0:000    8. 7A73CC08: 'SSDT', 'Ther_Rvp', Rev: 2, Len: 4514
+7:560  0:000    9. 7A73DDB0: 'SSDT', 'xh_kbl-r', Rev: 2, Len: 1923
+7:560  0:000    10. 7A73E538: 'UEFI', 'A M I', Rev: 1, Len: 66
+7:560  0:000    11. 7A73E580: 'SSDT', 'CpuSsdt', Rev: 2, Len: 6062
+7:560  0:000    12. 7A73FD30: 'LPIT', 'KBL-ULT', Rev: 1, Len: 148
+7:560  0:000    13. 7A73FDC8: 'SSDT', 'HdaDsp', Rev: 2, Len: 321
+7:560  0:000    14. 7A73FF10: 'SSDT', 'sensrhub', Rev: 2, Len: 671
+7:560  0:000    15. 7A7401B0: 'SSDT', 'PtidDevc', Rev: 2, Len: 12290
+7:560  0:000    16. 7A7431B8: 'SSDT', 'TbtTypeC', Rev: 2, Len: 1303
+7:560  0:000    17. 7A7436D0: 'DBGP', '', Rev: 1, Len: 52
+7:560  0:000    18. 7A743708: 'DBG2', '', Rev: 0, Len: 84
+7:560  0:000    19. 7A743760: 'SSDT', 'UsbCTabl', Rev: 2, Len: 4838
+7:560  0:000    20. 7A744A48: 'DMAR', 'KBL', Rev: 1, Len: 240
+7:560  0:000    21. 7A744B38: 'BGRT', 'A M I', Rev: 1, Len: 56
+7:560  0:000    22. 7A744B70: 'TPM2', 'A M I', Rev: 3, Len: 52
+7:560  0:000    23. 7A744BA8: 'ASF!', ' HCG', Rev: 32, Len: 160
+7:560  0:000    24. 7A744C48: 'WSMT', 'A M I', Rev: 1, Len: 40

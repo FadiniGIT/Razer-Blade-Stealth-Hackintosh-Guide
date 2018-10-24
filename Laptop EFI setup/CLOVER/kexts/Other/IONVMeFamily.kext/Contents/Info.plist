@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>BuildMachineOSBuild</key>
+	<string>15A284</string>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>English</string>
+	<key>CFBundleExecutable</key>
+	<string>IONVMeFamily</string>
+	<key>CFBundleGetInfoString</key>
+	<string>2.1.0, Copyright © 2016 Apple Inc. All rights reserved.</string>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.iokit.IONVMeFamily</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>IONVMeFamily</string>
+	<key>CFBundlePackageType</key>
+	<string>KEXT</string>
+	<key>CFBundleShortVersionString</key>
+	<string>2.1.0</string>
+	<key>CFBundleSignature</key>
+	<string>????</string>
+	<key>CFBundleSupportedPlatforms</key>
+	<array>
+		<string>MacOSX</string>
+	</array>
+	<key>CFBundleVersion</key>
+	<string>2.1.0</string>
+	<key>DTCompiler</key>
+	<string>com.apple.compilers.llvm.clang.1_0</string>
+	<key>DTPlatformBuild</key>
+	<string>8S111c</string>
+	<key>DTPlatformVersion</key>
+	<string>GM</string>
+	<key>DTSDKBuild</key>
+	<string>16A201t</string>
+	<key>DTSDKName</key>
+	<string>macosx10.12internal</string>
+	<key>DTXcode</key>
+	<string>0800</string>
+	<key>DTXcodeBuild</key>
+	<string>8S111c</string>
+	<key>IOKitPersonalities</key>
+	<dict>
+		<key>AppleS1XController</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.IONVMeFamily</string>
+			<key>Chipset Name</key>
+			<string>SSD Controller</string>
+			<key>IOClass</key>
+			<string>AppleS1XController</string>
+			<key>IOPCIClassMatch</key>
+			<string>0x01800200&amp;0xffffff00</string>
+			<key>IOPCIMatch</key>
+			<string>0x2001106b</string>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>IOUnitName</key>
+			<string>disk</string>
+			<key>Physical Interconnect</key>
+			<string>PCI-Express</string>
+			<key>Physical Interconnect Location</key>
+			<string>Internal</string>
+			<key>Vendor Name</key>
+			<string>Apple</string>
+		</dict>
+		<key>AppleS3ELabController</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.IONVMeFamily</string>
+			<key>Chipset Name</key>
+			<string>SSD Controller</string>
+			<key>IOClass</key>
+			<string>AppleS3ELabController</string>
+			<key>IOPCIClassMatch</key>
+			<string>0x01800200&amp;0xffffff00</string>
+			<key>IOPCIMatch</key>
+			<string>0x2002106b</string>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>IOUnitName</key>
+			<string>disk</string>
+			<key>Physical Interconnect</key>
+			<string>PCI-Express</string>
+			<key>Physical Interconnect Location</key>
+			<string>Internal</string>
+			<key>Vendor Name</key>
+			<string>Apple</string>
+		</dict>
+		<key>AppleS3XController</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.IONVMeFamily</string>
+			<key>Chipset Name</key>
+			<string>SSD Controller</string>
+			<key>IOClass</key>
+			<string>AppleS3XController</string>
+			<key>IOPCIClassMatch</key>
+			<string>0x01800200&amp;0xffffff00</string>
+			<key>IOPCIMatch</key>
+			<string>0x2003106b</string>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>IOUnitName</key>
+			<string>disk</string>
+			<key>Physical Interconnect</key>
+			<string>PCI-Express</string>
+			<key>Physical Interconnect Location</key>
+			<string>Internal</string>
+			<key>Vendor Name</key>
+			<string>Apple</string>
+		</dict>
+		<key>GenericNVMeSSD</key>
+		<dict>
+			<key>CFBundleIdentifier</key>
+			<string>com.apple.iokit.IONVMeFamily</string>
+			<key>Chipset Name</key>
+			<string>SSD Controller</string>
+			<key>IOClass</key>
+			<string>IONVMeController</string>
+			<key>IONameMatch</key>
+			<array>
+				<string>pci144d,a804</string>
+			</array>
+			<key>IOPCIPauseCompatible</key>
+			<true/>
+			<key>IOPCITunnelCompatible</key>
+			<true/>
+			<key>IOProviderClass</key>
+			<string>IOPCIDevice</string>
+			<key>IOUnitName</key>
+			<string>disk</string>
+			<key>Physical Interconnect</key>
+			<string>PCI-Express</string>
+			<key>Physical Interconnect Location</key>
+			<string>Internal</string>
+			<key>Vendor Name</key>
+			<string>Apple</string>
+		</dict>
+	</dict>
+	<key>OSBundleCompatibleVersion</key>
+	<string>1.2.0</string>
+	<key>OSBundleLibraries</key>
+	<dict>
+		<key>com.apple.driver.AppleEFINVRAM</key>
+		<string>2.0</string>
+		<key>com.apple.driver.AppleMobileFileIntegrity</key>
+		<string>1.0.1</string>
+		<key>com.apple.iokit.IOPCIFamily</key>
+		<string>1.0.0</string>
+		<key>com.apple.iokit.IOReportFamily</key>
+		<string>1.0</string>
+		<key>com.apple.iokit.IOStorageFamily</key>
+		<string>1.7.0</string>
+		<key>com.apple.kpi.bsd</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.iokit</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.libkern</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.mach</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.private</key>
+		<string>9.0.0</string>
+		<key>com.apple.kpi.unsupported</key>
+		<string>9.0.0</string>
+	</dict>
+	<key>OSBundleRequired</key>
+	<string>Local-Root</string>
+</dict>
+</plist>
